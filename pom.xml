@@ -12,10 +12,9 @@
     <url>http://www.spguru.com</url>
 
     <properties>
-        <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
         <spring.boot.maven.plugin.version>2.7.3</spring.boot.maven.plugin.version>
         <spring.boot.dependecies.version>2.7.3</spring.boot.dependecies.version>
     </properties>
@@ -63,11 +62,13 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>${spring.boot.maven.plugin.version}</version>
+                     
                 </plugin>
             </plugins>
         </pluginManagement>
     </build>
   <modules>
     <module>customer</module>
+    <module>fraud</module>
   </modules>
 </project>
