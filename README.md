@@ -13,3 +13,5 @@
 * Insert new customer
 
 ### 3. Create sub project fraud project:
+* Create model, repository and controller
+* Communication between customer and fraud service with restTemplate
