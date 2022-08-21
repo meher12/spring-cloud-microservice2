@@ -15,3 +15,10 @@
 ### 3. Create sub project fraud project:
 * Create model, repository and controller
 * Communication between customer and fraud service with restTemplate
+
+### 4. Create sub project Eureka Server project:
+* Create customer Client
+* Create customer Fraud
+* Change url in restTemplate from "http://localhost:8182/api/v1/fraud-check/{customerId}" to "http://FRAUD/api/v1/fraud-check/{customerId}"
+* Add @LoadBalanced annotation for RestTemplate bean ( to delete the conflicts between fraud instances service)
+* Check in Postman : http://localhost:8181/api/v1/customers
