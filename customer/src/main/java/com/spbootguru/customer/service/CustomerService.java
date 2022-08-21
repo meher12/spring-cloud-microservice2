@@ -6,9 +6,14 @@ import com.spbootguru.customer.dao.CustomerRegistrationRequest;
 import com.spbootguru.customer.model.Customer;
 import com.spbootguru.customer.repository.CustomerRepository;
 
-@Service
-public record CustomerService(CustomerRepository customerRepository) {
+import lombok.AllArgsConstructor;
 
+@Service
+@AllArgsConstructor
+public class CustomerService {
+
+    private final CustomerRepository customerRepository;
+    
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
                 .firstName(request.firstName())
